@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { PantallaExamenComponent } from './components/pantalla-examen/pantalla-examen.component';
 
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +13,8 @@ import { PantallaExamenComponent } from './components/pantalla-examen/pantalla-e
     PantallaExamenComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
