@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IDataPokemon } from 'src/app/interfaces/pokemonInterface';
 import { ApipokemonService } from 'src/app/services/apipokemon.service';
 
 @Component({
@@ -7,13 +8,21 @@ import { ApipokemonService } from 'src/app/services/apipokemon.service';
   styleUrls: ['./tabla-apipokemon.component.css']
 })
 export class TablaApipokemonComponent implements OnInit{
-  
+  listPokemon: IDataPokemon[] = [];
   constructor(private apiPokemonService: ApipokemonService) {
   
   }
+
   ngOnInit(): void {
-    console.log("Probando mi OnInit");
-    
+    console.log('Hola desde el ngOnInit');
+    this.apiPokemonService.getAllPokemon().subscribe(
+      (data) => { //arrow function
+        console.log(data);
+        this.listPokemon = data.results;
+      }, (error) => {
+        console.log(error);
+      }
+    );
   }
 
 }

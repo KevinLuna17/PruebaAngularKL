@@ -9,7 +9,10 @@ import { PantallaExamenComponent } from './components/pantalla-examen/pantalla-e
 import { AppRoutingModule } from './app-routing.module';
 
 import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 import { TablaApipokemonComponent } from './pages/tabla-apipokemon/tabla-apipokemon.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,9 @@ import { TablaApipokemonComponent } from './pages/tabla-apipokemon/tabla-apipoke
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
