@@ -9,11 +9,13 @@ import { PantallaExamenComponent } from './components/pantalla-examen/pantalla-e
 import { AppRoutingModule } from './app-routing.module';
 
 import { ButtonModule } from 'primeng/button';
+import { TablaApipokemonComponent } from './pages/tabla-apipokemon/tabla-apipokemon.component';
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    PantallaExamenComponent
+    PantallaExamenComponent,
+    TablaApipokemonComponent
   ],
   imports: [
     BrowserModule,
