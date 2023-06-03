@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { InicioComponent } from './pages/inicio/inicio.component';
 import { PantallaExamenComponent } from './components/pantalla-examen/pantalla-examen.component';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    InicioComponent,
     PantallaExamenComponent,
     TablaApipokemonComponent
   ],

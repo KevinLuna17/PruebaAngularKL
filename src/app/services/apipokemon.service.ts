@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
 import { HttpClient } from '@angular/common/http';
-import { IPokemon } from '../interfaces/pokemonInterface';
+import { IUser } from '../interfaces/userInterface';
 
-const API_GET__ALL_POKEMON = environment.API_GET__ALL_POKEMON;
+const API_GET__ALL_USER = environment.API_GET__ALL_USER;
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,8 @@ export class ApipokemonService {
 
   constructor(private http: HttpClient) { }
 
-  getAllPokemon() { 
-    return this.http.get<IPokemon>(API_GET__ALL_POKEMON);
+  getAllUser() { 
+    return this.http.get<IUser>(API_GET__ALL_USER);
   }
 
 }
